@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">		
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>E - Mamata</title>
+		
+		<link rel="shortcut icon" href="favicons/images-mamata-logo.png">
+		<link href="css/css-main.css" rel="stylesheet" type="text/css">
+		<link href="css/css-sweetalert.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+    <body>
+		
+				
+		
+<style>
+	form#login-form {
+		width: 45%;
+		float: right;
+		right: 0;
+		left: auto;
+		}
+		
+.animated-checkbox {
+	text-align: left;
+    margin-top: 12px;
+}
+.login_logo {
+    width: auto;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+	z-index: 9999;
+}
+.login_logo img {
+	width: 100%;
+}
+.login-separator.text-muted {
+	color: #999!important;
+	font-weight: normal;
+	font-size: 17px;
+	font-family: 'Lato';
+}
+.login-head {
+	    font-weight: 700;
+    font-family: 'Lato';
+   font-size: 32px;
+	margin-bottom: 0px !important;
+}
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+.grivance-status-table th {
+    border: 1px solid #ddd !important;
+    width: 215px;
+    background: #f2f7fd;
+}
+
+.icon-active{
+    color: #999;
+}
+
+.grivance-status-table {
+    margin-bottom: 25px !important;
+}
+
+.modal-space{
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.total_value{
+    font-size: 22px;
+    font-weight: bold;
+} 
+
+.login-bg {
+    background: #ffffff;
+    position: relative;
+	height: 100vh;
+}
+.form-div {
+    border: 1px solid #ddd;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    border-left: 2px solid #009688;
+    background: #ffffff;
+	text-align: left;
+}
+.login-register-container {
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /*background: #ffc4a7;*/
+	background: #009688;
+    background-position: right bottom;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+.login-register-container:before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 9999;
+    width: 70%;
+    height: 100%;
+    border-style: solid;
+    border-width: 0 0 100vh 200px;
+    border-color: transparent transparent #026f65 transparent;
+    z-index: -1;
+}
+.project-name:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    left: 0;
+    z-index: -1;
+	top: 0;
+}
+.triangle-down-right {
+    width: 10%;
+    height: 0;
+    padding-top: 10%;
+    overflow: hidden;
+}
+.triangle-down-right:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top:-500px;
+    
+    border-top: 500px solid transparent;
+    border-right: 500px solid #4679BD;
+}
+.form-wrapper {
+	background: #ffffff;
+    padding: 40px 60px;
+    border-radius: 5px;
+    /* border: 1px solid #ddd;*/
+}
+.login-register-container .form-control {
+    background-clip: border-box;
+    border-width: 0px 0;
+    border-top-color: transparent!important;
+	padding: 10px 0;
+}
+.login-form label {
+    font-size: 15px;
+	margin-bottom: 0px;
+}
+.form-div input:focus {
+    border: none;
+    border-color: transparent !important;
+    box-shadow: none;
+}
+.login-form button {
+    margin-top: 20px;
+}
+.login-form .content-divider>span {
+    background-color: #ffffff;
+    display: inline-block;
+}
+.application-name {
+    color: #ffffff;
+    font-size: 41px;
+    line-height: 100px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Lato';
+}
+.application-name span {
+    font-size: 79px;
+    line-height: 58px;
+    display: block;
+}
+.login-cover:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+}
+.project-name {
+    height: 100%;
+    padding: 25px 65px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+	/*background: url(https://emamata.odisha.nic.in/assets/images/IMG_1137.jpg);*/
+	background-size: cover;
+    background-repeat: no-repeat;
+	position: relative;
+    z-index: 1;
+}
+.project-name p {
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 20px;
+}
+@media  only screen and (min-width:1370px) and (max-width: 1920px) {
+   .login-form {
+    width: 440px !important;
+   }
+.project-name p {
+    padding-right: 200px;
+}
+}
+.design-by {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    color: #ffffff;
+    z-index: 9;
+}
+.design-by a {
+ color: #ffffff;
+}
+.page-content .container-fluid {
+	padding: 0px;
+}
+
+.verify-badge {
+    position: absolute;
+    right: 5px;
+    top: 45px;
+    line-height: 11px;
+    cursor: pointer;
+}
+.captcha-hints {
+	    font-style: italic;
+    margin-top: 13px;
+    /* float: left; */
+    color: #212529;
+    text-align: left;
+}
+.mamata-logo-login {
+	margin-bottom: 30px;
+}
+.login-form .btn-primary:hover {
+   background-color: #007065;
+    border-color: #00635a;
+    box-shadow: none !important;
+    transform: none !important;
+}
+.login-form label span {
+		color: red;
+	}
+	.label-text {
+		color: #232323 !important;
+	}
+@media  screen and (max-width: 1380px){
+	.form-wrapper {
+		padding: 30px 50px;
+	}
+	.login-head {
+		font-size: 18px;
+	}
+	.mamata-logo-login {
+		margin-bottom: 15px;
+	}
+	.mamata-logo-login img {
+		width: 60px;
+	}
+	form#login-form {
+		width: 330px;
+		margin: 0 auto;
+	}
+	.login-register-container .form-control {
+		padding: 4px 0;
+	}
+	.application-name {
+		font-size: 36px;
+		line-height: 77px;
+	}
+	.application-name span {
+		font-size: 63px;
+		line-height: 58px;
+	}
+	.login-separator.text-muted {
+		font-size: 13px;
+		margin: 10px 0 !important;
+	}
+	.login-form label {
+		font-size: 13px;
+		margin-bottom: 0px;
+		font-weight: bold;
+	}
+	.form-div {
+		padding: 5px 10px;
+	}
+	.animated-checkbox {
+		text-align: left;
+		margin-top: 0px;
+	}
+	.captcha-hints {
+		margin-top: 0px;
+	}
+}
+@media  screen and (max-width: 1199px){
+	
+}
+@media  screen and (max-width: 1060px){
+	form#login-form {
+		width: 293px;
+		margin: 0 auto;
+	}
+}
+@media  screen and (max-width: 991px){
+	.application-name {
+		font-size: 35px;
+		line-height: 44px;
+	}
+	.login_logo img {
+		width: 300px;
+	}
+	.login-form {
+		width: 100% !important;
+	}
+	.login_logo {
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 9999;
+		padding: 20px;
+		text-align: center;
+		display: block;
+	}
+	.project-name {
+		height: auto;
+		padding: 43px 65px;
+	}
+	.application-name {
+		text-align: center;
+	}
+	.project-name p {
+		text-align: center;
+	}
+	.login-register-container {
+		height: auto;
+		overflow: hidden;
+	}
+	.login-bg {
+		height: auto;
+		/*padding-bottom: 40px;*/
+	}
+	.form-wrapper h1, .form-wrapper h6 {
+		text-align: center;
+	}
+	.design-by {
+		bottom: 0;
+		right: 0px;
+		color: #000000;
+		width: 100%;
+		text-align: center;
+		padding: 13px;
+		position: relative;
+		left: 0;
+		z-index: 999;
+		width: 100%;
+		float: left;
+		background: #ffffff;
+		margin-bottom: 0;
+	}
+	.design-by a {
+		color: #000000;
+	}
+	.project-name {
+		height: auto;
+		padding: 105px 25px 60px;
+	}
+	.form-wrapper {
+       padding: 30px 15px;
+       width: 90%;
+    }
+}
+@media  screen and (max-width: 900px){
+	
+}
+@media  screen and (max-width: 767px){
+	
+	
+}
+@media  screen and (max-width: 767px){
+	
+	.application-name {
+		font-size: 29px;
+		line-height: 40px;
+	}
+	.login-register-container {
+		padding: 30px 0px;
+	}
+	.application-name span {
+		font-size: 44px;
+		line-height: 58px;
+	}
+	
+	
+}
+		
+		
+		
+		
+</style>
+
+
+<div class="page-content login-cover">
+        <!-- Main content -->
+        <div class="container-fluid">
+			<a href="#" class="login_logo"><img src="images/images-wcd-logo.png" alt="mamatalogo"></a>
+            <div class="row no-gutters">
+				<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 login-left-cont">
+                    <div class="project-name fullBackground">
+                        <h2 class="application-name">Welcome to <span>e-MAMATA</span></h2>
+                        <!--<p><strong>Dummy Text</strong> - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>-->
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 login-bg">
+                    <div class="login-register-container">
+                        <div class="content d-flex justify-content-center flex-column form-wrapper">
+							<div class="mamata-logo-login">
+								<img src="images/images-mamata-logo.png" alt="mamatalogo"> 
+							</div>
+                            <h1 class="mb-1 login-head">Login to e-MAMATA</h1>
+                            <h6 class="mb-0 login-separator text-muted mt-3 mb-3">Welcome back, Please login to access your account.</h6>
+							
+							<form method="post" id="login-form" class="login-form" action="https://emamata.odisha.nic.in/login">				
+								<input name="_token" type="hidden" value="Xn3xvsFc2jPAI8Wyz4rXrCvrzQfASJrYTolG9u7k">	
+								
+								<div class="form-group form-group-feedback form-div">
+                                    <label class="font-weight-semibold">Username <span class="eror">*</span></label>
+									<input class="form-control" type="text" name="username" id="username" placeholder="Username" maxlength="191" required="">
+                                </div>
+								
+								<div class="form-group form-group-feedback form-div">
+                                    <label class="font-weight-semibold">Password <span class="eror">*</span></label>
+									<input class="form-control" type="password" name="password" id="password" placeholder="Password" required="">
+                                </div>								
+								<div class="form-group ">
+									<div class="utility">
+										<div class="animated-checkbox">
+											<label>
+												<input type="checkbox" name="remember" id="remember" value="1" checked><span class="label-text">Stay Signed in</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group form-group-feedback form-div">
+									<img src="images/captcha-image" alt="https://github.com/igoshev/laravel-captcha" style="cursor:pointer;width:270px;height:70px;" title="Update" onclick="this.setAttribute('src','https://emamata.odisha.nic.in/captcha/image?675058892?_='+Math.random());var captcha=document.getElementById('captcha');if(captcha){captcha.focus()}">
+									<input type="text" class="form-control" id="captcha" name="captcha" placeholder="Enter the captcha code" autocomplete="off">
+								</div>
+								<div class="form-group">
+								<p class="captcha-hints">Note: Please click on the image to reload the captcha</p>
+								</div>
+								<div>
+									<button type="submit" class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
+								</div>
+							</form>	
+                            
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <p class="design-by">© 2021 e-MAMATA. Designed &amp; Developed By <a href="https://odisha.nic.in/" target="_blank">NIC, Odisha State Centre.</a></p>
+        </div>
+        <!-- /main content -->
+    </div>
+
+
+    
+	
+	<!--<section class="material-half-bg">
+		<div class="cover"></div>
+    </section>
+	
+    <section class="login-content">
+	
+		<div class="logo">
+		
+			<h1><div style="font-family:Times New Roman;"><img src="https://emamata.odisha.nic.in/assets/images/mamata-logo.png" alt="mamatalogo" width="120px" height="120px"/> Welcome to e-MAMATA <img src="https://emamata.odisha.nic.in/assets/images/odishalogo2.png" alt="odishalogo" width="120px" height="140px"/></div></h1>
+		</div>
+		
+		<div class="login-box">
+			<img src="https://emamata.odisha.nic.in/assets/images/IMG_1137.jpg" alt="odishalogo" width="100%" height="100%"/>
+			<form method="post" id="login-form" class="login-form" action="https://emamata.odisha.nic.in/login">
+				
+				<input name="_token" type="hidden" value="Xn3xvsFc2jPAI8Wyz4rXrCvrzQfASJrYTolG9u7k"/>
+				
+				<h3 class="login-head" style="color: #fff;" ><i class="fa fa-lg fa-fw fa-user"></i>Login</h3>
+				<div class="form-group">
+					<label class="control-label">Username</label>
+					<input class="form-control" type="text" name="username" id="username" placeholder="Username" maxlength="191" required="">
+				</div>
+				<div class="form-group">
+					<label class="control-label">Password</label>
+					 <input class="form-control" type="password" name="password" id="password" placeholder="Password" required="">
+				</div>
+				<div class="form-group">
+					<div class="utility">
+						<div class="animated-checkbox">
+							<label>
+								<input type="checkbox" name="remember" id="remember" value="1" checked=""><span class="label-text">Stay Signed in</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+						<img src="https://emamata.odisha.nic.in/captcha/image?660602736"
+     alt="https://github.com/igoshev/laravel-captcha"
+     style="cursor:pointer;width:270px;height:70px;"
+     title="Update"
+     onclick="this.setAttribute('src','https://emamata.odisha.nic.in/captcha/image?660602736?_='+Math.random());var captcha=document.getElementById('captcha');if(captcha){captcha.focus()}"
+>
+<br><br>
+						<input type="text" class="form-control" id="captcha" name="captcha" autocomplete="off">
+						<p style="font-style: italic; margin-top: 10px; float: left; color: #f7f8f9;">Note: Captcha is case-sensitive. Please click on the image to reload the captcha</p>
+            
+                    </div>
+				<div class="form-group btn-container">
+					<button type="submit" class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
+
+					<p style="text-align: center; margin-top: 20px">
+					<a target="_blank" download href="https://emamata.odisha.nic.in/public/apk/Mam.apk" style="font-style: italic; margin-top: 10px; color: #f7f8f9;">Click here to download mobile app file</a>
+					</p>
+				</div>
+			</form>
+			
+		</div>
+    </section>-->
+
+	
+				
+			  
+			
+			
+<script type="text/javascript" src="js/js-jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/js-popper.min.js"></script>
+<script type="text/javascript" src="js/js-bootstrap.min.js"></script>
+<script type="text/javascript" src="js/js-main.js"></script>
+<script type="text/javascript" src="js/plugins-pace.min.js"></script>
+<script type="text/javascript" src="js/js-sweetalert.min.js"></script>
+
+   <script src="js/js-fullclip.min.js"></script>
+<script type="text/javascript">
+$(function () {
+		$('.fullBackground').fullClip({
+			images: ['https://emamata.odisha.nic.in/assets/images/bg-zero.jpg', 'https://emamata.odisha.nic.in/assets/images/bg-one.jpg', 'https://emamata.odisha.nic.in/assets/images/bg-two.jpg'],
+			transitionTime: 1000,
+			wait: 4000
+		});		
+	});
+</script>
+
+
+	
+</body>
+</html>
